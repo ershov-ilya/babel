@@ -92,6 +92,7 @@ foreach($contextKeys as $contextKey) {
 	$active = ($modx->resource->get('context_key') == $contextKey) ? $activeCls : '';
 	$placeholders = array(
 		'cultureKey' => $cultureKey,
+		'contextKey' => $contextKey,
 		'url' => $url,
 		'active' => $active,
 		'id' => $translationAvailable? $linkedResources[$contextKey] : '');
